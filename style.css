@@ -1,0 +1,224 @@
+/* ========== ポートフォリオページ用CSS ========== */
+
+/* リセットとベーススタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* メインコンテナ */
+.portfolio {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ヘッダー（タイトル部分） */
+.portfolio-header {
+  background: linear-gradient(135deg, #0d47a1, #1976d2);
+  color: white;
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.portfolio-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+/* コンテンツ部分 */
+.portfolio-content {
+  padding: 50px 40px;
+}
+
+.content-section {
+  margin-bottom: 40px;
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  border-left: 5px solid #0d47a1;
+}
+
+.content-section:last-child {
+  margin-bottom: 0;
+}
+
+.content-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.content-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* 結果セクション */
+.content-section.result {
+  background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+  border-left-color: #28a745;
+}
+
+.highlight {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #28a745;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 2px 10px rgba(40, 167, 69, 0.15);
+}
+
+/* 画像セクション */
+.portfolio-image {
+  padding: 0 40px 50px;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* タブレット対応 (768px以下) */
+@media (max-width: 768px) {
+  .portfolio {
+    margin: 0 10px;
+  }
+  
+  .portfolio-header {
+    padding: 40px 20px;
+  }
+  
+  .portfolio-title {
+    font-size: 2rem;
+  }
+  
+  .portfolio-content {
+    padding: 30px 25px;
+  }
+  
+  .content-section {
+    padding: 25px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.3rem;
+  }
+  
+  .content-section p {
+    font-size: 1rem;
+  }
+  
+  .highlight {
+    font-size: 1.2rem;
+    padding: 12px 16px;
+  }
+  
+  .portfolio-image {
+    padding: 0 25px 30px;
+  }
+}
+
+/* スマートフォン対応 (480px以下) */
+@media (max-width: 480px) {
+  .portfolio {
+    margin: 0 5px;
+  }
+  
+  .portfolio-header {
+    padding: 30px 15px;
+  }
+  
+  .portfolio-title {
+    font-size: 1.6rem;
+  }
+  
+  .portfolio-content {
+    padding: 25px 20px;
+  }
+  
+  .content-section {
+    padding: 20px 15px;
+    margin-bottom: 25px;
+    border-left-width: 3px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .content-section p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  
+  .highlight {
+    font-size: 1.1rem;
+    padding: 10px 14px;
+    line-height: 1.4;
+  }
+  
+  .portfolio-image {
+    padding: 0 20px 25px;
+  }
+}
+
+/* 小さなスマートフォン対応 (360px以下) */
+@media (max-width: 360px) {
+  .portfolio {
+    margin: 0;
+  }
+  
+  .portfolio-header {
+    padding: 25px 10px;
+  }
+  
+  .portfolio-title {
+    font-size: 1.4rem;
+  }
+  
+  .portfolio-content {
+    padding: 20px 15px;
+  }
+  
+  .content-section {
+    padding: 15px 12px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.1rem;
+  }
+  
+  .content-section p {
+    font-size: 0.9rem;
+  }
+  
+  .highlight {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+  
+  .portfolio-image {
+    padding: 0 15px 20px;
+  }
+}
